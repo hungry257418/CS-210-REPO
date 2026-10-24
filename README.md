@@ -3,7 +3,7 @@ Aidan Tully's repo for module eight journal as part of CS-210 Programming Langua
 
 # CS-210 Project Three: Corner Grocer Item Tracker
 
-A C++ console program built for CS-210 Programming Languages at SNHU. It reads a day's worth of purchase records and tells the store how often each item was bought.
+A C++ console program built for my CS-210 Programming Languages class. It reads a day's worth of purchase records and tells the store how often each item was bought.
 
 ## Files
 
@@ -25,7 +25,7 @@ I think the class design is the strongest part. All the data lives in a private 
 
 **Where could you enhance your code? How would these improvements make your code more efficient, secure, and so on?**
 
-Right now the program reads the file one word at a time, so an item with a space in its name, like "Green Peppers", would get split into two items. Reading full lines with `getline` would fix that. I'd also normalize the capitalization when the data is loaded instead of only when searching, so "apples" and "Apples" in the file would count as the same item. The file names are hardcoded too, so letting the user pass in a file name would make it work for any day's records, not just this one. Finally, adding a few automated tests for the counting and search functions would make it safer to change the code later without breaking something by accident.
+Right now, the program reads the file one word at a time, so an item with a space in its name, like "Green Peppers", would get split into two items. Reading full lines with `getline` would fix that. I'd also normalize the capitalization when the data is loaded instead of only when searching, so "apples" and "Apples" in the file would count as the same item. The file names are hardcoded too, so letting the user pass in a file name would make it work for any day's records, not just this one. Finally, adding a few automated tests for the counting and search functions would make it safer to change the code later without breaking something by accident.
 
 **Which pieces of the code did you find most challenging to write, and how did you overcome this? What tools or resources are you adding to your support network?**
 
